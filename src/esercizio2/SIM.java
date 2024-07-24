@@ -3,7 +3,7 @@ package esercizio2;
 import java.util.Arrays;
 
 public class SIM {
-    static String[] chiamate;
+    private Chiamata[] chiamate;
     private String numero;
     private int credito;
     private int counter;
@@ -12,7 +12,7 @@ public class SIM {
         this.numero = num;
         this.credito = 0;
         this.counter = 0;
-        this.chiamate = new String[5];
+        this.chiamate = new Chiamata[5];
     }
 
 
@@ -23,7 +23,7 @@ public class SIM {
 
     }
 
-    public void aggiungiNumero(String n) {
+    /*public void aggiungiNumero(String n) {
 
         if (counter != chiamate.length) {
             chiamate[counter] = n;
@@ -31,5 +31,9 @@ public class SIM {
         } else {
             System.out.println("Segreteria piena");
         }
+    }*/
+
+    public void setChiamate(Chiamata[] chiamate) {
+        this.chiamate = chiamate;
     }
 }
