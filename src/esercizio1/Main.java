@@ -10,5 +10,6 @@ public class Main {
         System.out.println("L'altezza del secondo rettangolo è: " + rettangolo2.getAltezza());
 
         Rettangolo.stampaRettangolo(rettangolo1);
+        Rettangolo.stampaDueRettangoli(rettangolo1, rettangolo2);
     }
 }
